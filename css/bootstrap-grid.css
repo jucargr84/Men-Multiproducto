@@ -3723,4 +3723,7 @@ html {
 .pos-relative{
   position: relative;
 }
+.pos-static{
+  position: static !important;
+}
 /* /Custom Classes multiproducto */

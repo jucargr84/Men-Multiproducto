@@ -21,15 +21,61 @@ nav.menu{
 .menu_contenido_opcion{
    border-bottom-color: inherit;
    border-bottom-style: solid;
-   /* border-bottom-width: 4px; */
    border-bottom-width: 0;
 
    overflow-y: hidden;
-   height: 0;
-   transition: border .3s;
+
+   position: absolute;
+   z-index: -1;
+   top: 100%;
+   left: 0;
+   right: 0;
+   transform: translateY(-100%);
+   opacity: 0;
+
+   transition: transform .3s, opacity .2s;
 }
 
-.menu_contenido_opcion:target{
-   height: auto;
+.menu_opciones li:hover a{
+   background-color:rgba(0, 0, 0, 0.1);
+}
+
+.menu_opciones li:hover a + .menu_contenido_opcion{
    border-bottom-width: 4px;
+   transform: translateY(0);
+   opacity: 1;
+}
+
+.menu .categoria-nombre{
+   font-size: 22px;
+   margin-top: 0;
+   margin-bottom: 10px;
+}
+
+.menu .categoria-lista li{
+   padding: 5px 0;
+}
+
+.menu li:hover .categoria-lista a{
+   background-color: unset;
+}
+
+.menu .categoria-lista li a{
+   padding-right: 0;
+   line-height: initial;
+   color: rgb(49, 49, 49);
+   position: relative;
+}
+
+.menu .categoria-lista li:hover a{
+   color: rgb(0, 102, 255);
+   /* text-decoration: underline; */
+}
+
+.menu .categoria-lista li a::before{
+   content: '\0203A';
+   font-size: 18px;
+   position: absolute;
+   top: -3px;
+   left: 3px;
 }
