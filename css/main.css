@@ -1,0 +1,35 @@
+.top-info li:not(:first-of-type){
+   border-left: 1px solid lightgray;
+}
+.top-info_value{
+   font-size: 20px;
+   font-weight: 300;
+}
+.top-info_traslado{
+   line-height: 14px;
+}
+nav.menu{
+   height: auto;
+}
+.nav-wrapper .logo{
+   max-width: 220px;
+}
+.nav-wrapper .logo img{
+   display: block;
+   width: 100%;
+}
+.menu_contenido_opcion{
+   border-bottom-color: inherit;
+   border-bottom-style: solid;
+   /* border-bottom-width: 4px; */
+   border-bottom-width: 0;
+
+   overflow-y: hidden;
+   height: 0;
+   transition: border .3s;
+}
+
+.menu_contenido_opcion:target{
+   height: auto;
+   border-bottom-width: 4px;
+}
