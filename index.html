@@ -7,6 +7,13 @@
    <title>Menú Multiproducto</title>
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+   <style>
+      :root{
+         /* Variables CSS */
+         --color-marca: #B2C52D;
+         /* --color-marca: rgb(223, 35, 176); */
+      }
+   </style>
    <link rel="stylesheet" href="css/bootstrap-grid.css">
    <link rel="stylesheet" href="css/materialize.css">
    <link rel="stylesheet" href="css/main.css">
@@ -14,314 +21,187 @@
 <body>
 
    <header id="pg-header">
-
-      <div class="white">
-         <div class="container">
-            <div class="d-flex">
-               <ul class="d-flex flex-fill my-3 top-info">
-                  <li class="px-3 center flex-fill">
-                     <p class="m-0">
-                        <span class="top-info_value">Gestor</span>
-                        <br>
-                        <span class="top-info_name">Esteban Castillo</span>
-                     </p>
-                  </li>
-                  <li class="px-3 center flex-fill">
-                     <p class="m-0">
-                        <span class="top-info_value">$120.000</span>
-                        <br>
-                        <span class="top-info_name">Adeuda</span>
-                     </p>
-                  </li>
-                  <li class="px-3 center flex-fill">
-                     <p class="m-0">
-                        <span class="top-info_value">$1.250.000</span>
-                        <br>
-                        <span class="top-info_name">Saldo Recargas</span>
-                     </p>
-                  </li>
-                  <li class="px-3 center flex-fill">
-                     <p class="m-0">
-                        <span class="top-info_value">$250.566</span>
-                        <br>
-                        <span class="top-info_name">Saldo Multiproducto</span>
-                     </p>
-                  </li>
-                  <li class="px-3 center flex-fill d-flex align-items-center">
-                     <span class="top-info_traslado"><b>Saldo<br>Recargas</b></span>
-                     <a href="#" class="btn-floating light-green darken-1 tooltipped my-2 mx-3" data-position="bottom" data-tooltip="Trasladar Saldos"><i class="material-icons">arrow_back</i></a>
-                     <span class="top-info_traslado"><b>Saldo<br>Multiproducto</b></span>
-                  </li>
-               </ul>
-               <div class="p-3 center flex-fill light-green darken-1 white-text">
-                  <p class="m-0">
-                     <span class="top-info_value">$125.000</span>
-                     <br>
-                     <b class="top-info_name">Ganancias</b>
-                  </p>
+      <div class="container-fluid color-principal-marca px-4">
+         <div class="header-top py-1">
+            <div class="row">
+               <div class="col-2">
+                  <a href="#!" class="white-text valign-wrapper justify-content-center"><i class="material-icons mr-1">help_outline</i> Ayuda | Soporte</a>
+               </div>
+               <div class="col-8 p-0">
+                  <div class="header-top_aviso">
+                     <p class="white-text header-top_aviso_texto">!Aviso importante para todos nuestros usuarios. Multiproducto cuenta no solo con recargas sino con muchos mas productos y un nuevo y mejorado diseño que aumentan la productividad y el desenpeño de nuestros usuarios a nivel nacional.</p>
+                  </div>
+               </div>
+               <div class="col-2">
+                  <a href="#!" class="white-text valign-wrapper justify-content-center"><i class="material-icons mr-1">power_off</i>Cerrar Sesión</a>
                </div>
             </div>
          </div>
       </div>
-      <nav class="light-green darken-1 menu pos-relative">
-         <div class="container">
-            <div class="nav-wrapper d-flex align-items-center pos-static">
-               <a href="#" class="logo p-2">
-                  <img src="img/logo.png" alt="Logo movilservicios">
+      <div class="container-fluid px-4 py-2">
+         <div class="d-flex justify-content-between align-items-center pt-4 pb-2 px-3">
+            <div class="logo-marca px-3">
+               <a href="#!">
+                  <img src="img/logo.png" alt="Logo Marcablanca" class="responsive-img">
                </a>
-               <ul class="hide-on-med-and-down menu_opciones">
-                  <li>
-                     <a href="#!" class="white-text">Administración</a>
-                     <div class="menu_contenido_opcion light-green lighten-5 light-green-text text-darken-1">
-                        <div class="py-3 black-text container-fluid">
-                           <div class="row">
-                              <div class="col-sm-12 col-md-4">
-                                 <div class="row">
-                                    <div class="col-sm-12">
-                                       <h3 class="categoria-nombre">Gestion</h3>
-                                    </div>
-                                    <div class="col-sm-6">
-                                       <ul class="categoria-lista d-flex flex-column">
-                                          <li><a href="#!">Productos</a></li>
-                                          <li><a href="#!">Proveedores</a></li>
-                                          <li><a href="#!">Medios de venta</a></li>
-                                          <li><a href="#!">Usuarios</a></li>
-                                          <li><a href="#!">Comercios</a></li>
-                                          <li><a href="#!">Comisiones</a></li>
-                                       </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                       <ul class="categoria-lista d-flex flex-column">
-                                          <li><a href="#!">Recursos</a></li>
-                                          <li><a href="#!">Publicidad</a></li>
-                                          <li><a href="#!">Canales</a></li>
-                                          <li><a href="#!">Recaudadores</a></li>
-                                          <li><a href="#!">Usuarios ws</a></li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-sm-12 col-md-4">
-                                 <div class="row">
-                                    <div class="col-sm-12">
-                                       <h3 class="categoria-nombre">Configuración</h3>
-                                    </div>
-                                    <div class="col-sm-6">
-                                       <ul class="categoria-lista d-flex flex-column">
-                                          <li><a href="#!">Servicios web entre gestores y proveedor</a></li>
-                                          <li><a href="#!">Tema y color</a></li>
-                                          <li><a href="#!">Cambio contraseña</a></li>
-                                          <li><a href="#!">Activar Bolsa especial</a></li>
-                                          <li><a href="#!">Mantenimiento</a></li>
-                                       </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                       <ul class="categoria-lista d-flex flex-column">
-                                          <li><a href="#!">Comisiones</a></li>
-                                          <li><a href="#!">Recursos</a></li>
-                                          <li><a href="#!">Publicidad</a></li>
-                                          <li><a href="#!">Canales</a></li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-sm-12 col-md-4">
-                                 <div class="row">
-                                    <div class="col-sm-12">
-                                       <h3 class="categoria-nombre">Otros</h3>
-                                    </div>
-                                    <div class="col-sm-6">
-                                       <ul class="categoria-lista d-flex flex-column">
-                                          <li><a href="#!">Conciliación simcard multioperador   </a></li>
-                                          <li><a href="#!">Liquidar residuales</a></li>
-                                          <li><a href="#!">Productos multiproducto</a></li>
-                                          <li><a href="#!">Servicios web entre gestores y proveedor</a></li>
-                                          <li><a href="#!">Tema y color</a></li>
-                                       </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                       <ul class="categoria-lista d-flex flex-column">
-                                          <li><a href="#!">Comisiones</a></li>
-                                          <li><a href="#!">Recursos</a></li>
-                                          <li><a href="#!">Publicidad</a></li>
-                                          <li><a href="#!">Canales</a></li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-                  <li>
-                     <a href="#!" class="white-text">Reportes</a>
-                     <div class="menu_contenido_opcion light-green lighten-5 light-green-text text-darken-1">
-                        <div class="py-3 black-text container-fluid">
-                           <div class="row">
-                              <div class="col-sm-12 col-md-4">
-                                 <div class="row">
-                                    <div class="col-sm-12">
-                                       <h3 class="categoria-nombre">Reportes</h3>
-                                    </div>
-                                    <div class="col-sm-6">
-                                       <ul class="categoria-lista d-flex flex-column">
-                                          <li><a href="#!">Productos</a></li>
-                                          <li><a href="#!">Proveedores</a></li>
-                                          <li><a href="#!">Medios de venta</a></li>
-                                          <li><a href="#!">Usuarios</a></li>
-                                          <li><a href="#!">Comercios</a></li>
-                                          <li><a href="#!">Comisiones</a></li>
-                                       </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                       <ul class="categoria-lista d-flex flex-column">
-                                          <li><a href="#!">Recursos</a></li>
-                                          <li><a href="#!">Publicidad</a></li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-sm-12 col-md-4">
-                                 <div class="row">
-                                    <div class="col-sm-12">
-                                       <h3 class="categoria-nombre">Configuración</h3>
-                                    </div>
-                                    <div class="col-sm-6">
-                                       <ul class="categoria-lista d-flex flex-column">
-                                          <li><a href="#!">Servicios web entre gestores y proveedor</a></li>
-                                          <li><a href="#!">Tema y color</a></li>
-                                          <li><a href="#!">Cambio contraseña</a></li>
-                                       </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                       <ul class="categoria-lista d-flex flex-column">
-                                          <li><a href="#!">Comisiones</a></li>
-                                          <li><a href="#!">Recursos</a></li>
-                                          <li><a href="#!">Publicidad</a></li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-sm-12 col-md-4">
-                                 <div class="row">
-                                    <div class="col-sm-12">
-                                       <h3 class="categoria-nombre">Otros</h3>
-                                    </div>
-                                    <div class="col-sm-6">
-                                       <ul class="categoria-lista d-flex flex-column">
-                                          <li><a href="#!">Conciliación simcard multioperador   </a></li>
-                                          <li><a href="#!">Liquidar residuales</a></li>
-                                          <li><a href="#!">Productos multiproducto</a></li>
-                                          <li><a href="#!">Servicios web entre gestores y proveedor</a></li>
-                                          <li><a href="#!">Tema y color</a></li>
-                                       </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                       <ul class="categoria-lista d-flex flex-column">
-                                          <li><a href="#!">Comisiones</a></li>
-                                          <li><a href="#!">Recursos</a></li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-                  <li>
-                     <a href="#!" class="white-text">Operaciones</a>
-                     <div class="menu_contenido_opcion light-green lighten-5 light-green-text text-darken-1">
-                        <div class="py-3 black-text container-fluid">
-                           <div class="row">
-                              <div class="col-sm-12 col-md-4">
-                                 <div class="row">
-                                    <div class="col-sm-12">
-                                       <h3 class="categoria-nombre">Operaciones</h3>
-                                    </div>
-                                    <div class="col-sm-6">
-                                       <ul class="categoria-lista d-flex flex-column">
-                                          <li><a href="#!">Productos</a></li>
-                                          <li><a href="#!">Proveedores</a></li>
-                                          <li><a href="#!">Medios de venta</a></li>
-                                          <li><a href="#!">Usuarios</a></li>
-                                          <li><a href="#!">Comercios</a></li>
-                                          <li><a href="#!">Comisiones</a></li>
-                                       </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                       <ul class="categoria-lista d-flex flex-column">
-                                          <li><a href="#!">Recursos</a></li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-sm-12 col-md-4">
-                                 <div class="row">
-                                    <div class="col-sm-12">
-                                       <h3 class="categoria-nombre">Configuración</h3>
-                                    </div>
-                                    <div class="col-sm-6">
-                                       <ul class="categoria-lista d-flex flex-column">
-                                          <li><a href="#!">Servicios web entre gestores y proveedor</a></li>
-                                          <li><a href="#!">Tema y color</a></li>
-                                          <li><a href="#!">Cambio contraseña</a></li>
-                                          <li><a href="#!">Activar Bolsa especial</a></li>
-                                          <li><a href="#!">Mantenimiento</a></li>
-                                       </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                       <ul class="categoria-lista d-flex flex-column">
-                                          <li><a href="#!">Comisiones</a></li>
-                                          <li><a href="#!">Recursos</a></li>
-                                          <li><a href="#!">Publicidad</a></li>
-                                          <li><a href="#!">Canales</a></li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-sm-12 col-md-4">
-                                 <div class="row">
-                                    <div class="col-sm-12">
-                                       <h3 class="categoria-nombre">Otros</h3>
-                                    </div>
-                                    <div class="col-sm-6">
-                                       <ul class="categoria-lista d-flex flex-column">
-                                          <li><a href="#!">Conciliación simcard multioperador   </a></li>
-                                          <li><a href="#!">Liquidar residuales</a></li>
-                                          <li><a href="#!">Productos multiproducto</a></li>
-                                          <li><a href="#!">Servicios web entre gestores y proveedor</a></li>
-                                          <li><a href="#!">Tema y color</a></li>
-                                       </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                       <ul class="categoria-lista d-flex flex-column">
-                                          <li><a href="#!">Comisiones</a></li>
-                                          <li><a href="#!">Recursos</a></li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-               </ul>
-               <ul class="menu_opciones ml-auto">
-                  <li><a href="#!" class="white-text tooltipped" data-position="bottom" data-tooltip="Cerrar Sesión"><i class="material-icons">power_settings_new</i></a></li>
-               </ul>
+            </div>
+            <ul class="menu flex-fill d-flex">
+               <li>
+                  <input type="radio" class="hide" name="menu_item" id="item1">
+                  <label for="item1">Operaciones</label>
+               </li>
+               <li>
+                  <input type="radio" class="hide" name="menu_item" id="item2">
+                  <label for="item2">Reportes</label>
+               </li>
+               <li>
+                  <input type="radio" class="hide" name="menu_item" id="item3">
+                  <label for="item3">Administración</label>
+               </li>
+            </ul>
+            <div class="recarga_aqui d-flex align-items-center py-2 px-3">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.41 70.32">
+                  <defs><style>.cls-1-recarga_aqui{fill:#fff;}.cls-2-recarga_aqui{fill:none;stroke:var(--color-marca);stroke-miterlimit:10;stroke-width:2px;}.cls-3-recarga_aqui{fill:#666;}.cls-4-recarga_aqui{fill:#fcee21;}</style></defs><title>Recargas</title><g id="Capa_2" data-name="Capa 2"><g id="icono_recarga_aqui" data-name="icono recarga aqui"><circle class="cls-1-recarga_aqui" cx="34.91" cy="35.04" r="34.5"/><ellipse class="cls-2-recarga_aqui" cx="35.07" cy="35.16" rx="34.07" ry="34.16" transform="translate(-4.87 5.65) rotate(-8.62)"/><path class="cls-1-recarga_aqui" d="M14.21,4.54h27.4a5.8,5.8,0,0,1,5.8,5.8V58.29a5.8,5.8,0,0,1-5.8,5.8H11.68a3.27,3.27,0,0,1-3.27-3.27V10.34a5.8,5.8,0,0,1,5.8-5.8Z"/><path class="cls-3-recarga_aqui" d="M26.44,9.47A2.54,2.54,0,1,1,29,6.93,2.55,2.55,0,0,1,26.44,9.47Z"/><path class="cls-4-recarga_aqui" d="M26.53,46.54a14,14,0,1,0-14-14A14,14,0,0,0,26.53,46.54ZM25.61,34.2c-2.69-1-5.45-2.42-5.45-5.78,0-2.71,1.8-4.76,4.72-5.45V20h3.55v2.75a9.55,9.55,0,0,1,3.72,1l.43.21-1.11,3.8-.78-.36a8,8,0,0,0-3.57-.86c-1.38,0-2.2.55-2.2,1.47s.77,1.37,3.18,2.33c3.57,1.34,5.1,3.12,5.1,5.95s-1.92,5-4.94,5.69v3.11H24.7V42.22a10.12,10.12,0,0,1-4.48-1.35l-.36-.24L21,36.76l.64.38a8.66,8.66,0,0,0,4.27,1.21c1.54,0,2.53-.68,2.53-1.74C28.42,35.89,28.08,35.1,25.61,34.2Z"/><path class="cls-3-recarga_aqui" d="M44.21,60.33H8.66V9.22a1.61,1.61,0,0,1,1.61-1.61H42.61a1.61,1.61,0,0,1,1.6,1.61v1h3.2V8a4.82,4.82,0,0,0-4.8-4.81H10.27A4.82,4.82,0,0,0,5.46,8V63.1a4.81,4.81,0,0,0,4.81,4.8H42.61a4.81,4.81,0,0,0,4.8-4.8V38.87h-3.2Z"/><rect class="cls-1-recarga_aqui" x="22.41" y="63.54" width="8" height="1" rx="0.43"/><polygon class="cls-1-recarga_aqui" points="41.41 19.55 29.26 30.89 29.41 32.55 30.41 33.55 31.41 33.55 33.41 33.55 39.41 28.55 44.41 33.55 50.41 36.55 58.41 30.55 61.41 23.55 50.41 13.54 45.41 15.54 38.41 13.54 36.41 13.54 35.41 15.54 37.41 18.55 41.41 19.55"/><ellipse class="cls-1-recarga_aqui" cx="61.41" cy="41.54" rx="3" ry="4"/><path class="cls-1-recarga_aqui" d="M50.41,47c0,3-1.35,5.5-3,5.5s-3-2.46-3-5.5c0-2.52,1.41-5.38,3-5.5.65,0,1.77.33,2,1,.1.32,0,.68.25.87s.64,0,.75.13-.19.52-.33.74C49.55,45.16,50.41,46.37,50.41,47Z"/><path class="cls-1-recarga_aqui" d="M70.41,31a3.24,3.24,0,0,1-1.11,2.28c-.18.17-1.24-.13-1.3-.28a5.59,5.59,0,0,1-.59-2c.07-1.05.7-2.5,1.5-2.5S70.41,29.66,70.41,31Z"/><path class="cls-3-recarga_aqui" d="M63.1,25.06a7.94,7.94,0,0,0,1.48-2.6c1.56-4.57-1.72-8.94-2.17-9.52h0c-.52-.51-4.52-4.24-9.23-3.19A8,8,0,0,0,50.43,11l-2.11,2c-1.1.89-3.39,1.74-7.78-.18-.28-.16-3.13-1.67-5.08.06a3.11,3.11,0,0,0-.93,2.79c.33,1.66,2.09,3.14,5.25,4.41a6.07,6.07,0,0,1-.44.44L29.27,29.36a3.65,3.65,0,0,0-.85,4.56,3.51,3.51,0,0,0,2.3,1.67,3.61,3.61,0,0,0,2.72-.5l5.69-5a.05.05,0,0,1,.09,0,5.26,5.26,0,0,0,1,1.73,6.88,6.88,0,0,0,1.5,1.25h0A7,7,0,0,0,47,35.92a3,3,0,0,1,.79.49,4.12,4.12,0,0,0,5.13.42l.07,0c.19-.14,4.32-3.19,5.83-6a13.63,13.63,0,0,0,1-2.3,4.07,4.07,0,0,1,.83-1.59S62.86,25.27,63.1,25.06Zm-4.77,1.49a11,11,0,0,0-.52,1.26,11,11,0,0,1-.84,2c-1.22,2.26-4.83,5-5.15,5.25-1.27.74-1.86.31-2.75-.34a4.16,4.16,0,0,0-1.7-.87l-.09,0a5.13,5.13,0,0,1-3.52-1.72,3.07,3.07,0,0,1-.24-.3,1,1,0,0,0-.45-.38L43,31.34a4.64,4.64,0,0,1-1.13-.92c-.57-.65-1.32-1.51-.75-2.08l.34-.35a1.06,1.06,0,0,0-1.51-1.49l-7.52,6.69a1.42,1.42,0,1,1-1.88-2.12l10.21-9a5,5,0,0,0,1.65-2.33l.21-.46h0A37.66,37.66,0,0,1,37,15.93a1.46,1.46,0,0,1-.42-.74.94.94,0,0,1,.26-.8c.85-.75,2.66.23,2.68.24l.08,0c3.33,1.46,6.14,1.75,8.38.86a6.24,6.24,0,0,0,1.72-1,0,0,0,0,1,.07,0c0,.06,10.8,8.28,9.45,10.69A8.67,8.67,0,0,0,58.33,26.55Z"/><path class="cls-4-recarga_aqui" d="M61.47,45.61a4.07,4.07,0,1,0-4.06-4.07A4.07,4.07,0,0,0,61.47,45.61ZM61.2,42c-.78-.28-1.58-.7-1.58-1.67A1.61,1.61,0,0,1,61,38.77V37.9h1v.8A2.93,2.93,0,0,1,63.1,39l.13.06-.33,1.11-.22-.11a2.36,2.36,0,0,0-1-.25c-.4,0-.64.16-.64.43s.23.4.92.67c1,.39,1.49.91,1.49,1.73A1.68,1.68,0,0,1,62,44.28v.91h-1v-.84a2.94,2.94,0,0,1-1.3-.39l-.1-.07.32-1.12.18.11a2.56,2.56,0,0,0,1.24.35c.45,0,.74-.2.74-.5S61.92,42.29,61.2,42Z"/><path class="cls-4-recarga_aqui" d="M47.53,52.54A5.5,5.5,0,1,0,42,47,5.5,5.5,0,0,0,47.53,52.54Zm-.36-4.85c-1.06-.38-2.14-.95-2.14-2.27a2.19,2.19,0,0,1,1.85-2.14V42.12h1.4V43.2a3.72,3.72,0,0,1,1.46.39l.17.08-.44,1.49-.3-.13a3.08,3.08,0,0,0-1.41-.34c-.54,0-.86.21-.86.57s.3.54,1.25.92c1.4.52,2,1.22,2,2.34a2.28,2.28,0,0,1-1.94,2.23V52h-1.4V50.85a4,4,0,0,1-1.76-.54l-.14-.09.44-1.52.25.15a3.44,3.44,0,0,0,1.68.47c.6,0,1-.26,1-.68S48.14,48.05,47.17,47.69Z"/><path class="cls-4-recarga_aqui" d="M69,33.42A2.44,2.44,0,1,0,66.53,31,2.44,2.44,0,0,0,69,33.42Zm-.16-2.15c-.47-.17-1-.42-1-1a1,1,0,0,1,.82-.94V28.8h.62v.48a1.57,1.57,0,0,1,.65.17l.07,0-.19.66-.14-.06a1.32,1.32,0,0,0-.62-.15c-.24,0-.38.09-.38.25s.13.24.55.41c.62.23.89.54.89,1a1,1,0,0,1-.86,1v.55h-.62v-.5a1.84,1.84,0,0,1-.78-.24l-.06,0,.19-.67.12.06a1.41,1.41,0,0,0,.74.21c.27,0,.44-.12.44-.3S69.24,31.43,68.81,31.27Z"/></g></g>
+               </svg>
+               <strong class="pl-1">!Recarga aquí¡</strong>
+            </div>
+            <div class="info-usuario color-principal-marca white-text ml-4 pl-4 py-2 pr-2">
+               <p class="m-0 pl-1">Gestor</p>
+               <p class="m-0 pl-1">Esteban Castillo</p>
+               <span class="info-usuario_codigo p-2">1512</span>
+               <div class="info-usuario_icono">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 55.13 66">
+                     <defs><style>.cls-1-user{fill:none;}.cls-2-user{fill:var(--color-marca);}.cls-3-user{clip-path:url(#clip-path);}</style><clipPath id="clip-path" transform="translate(-4.93 -1)"><circle class="cls-1-user" cx="33" cy="33" r="33"/></clipPath></defs><title>Usuario</title><g id="Capa_2" data-name="Capa 2"><g id="user"><ellipse class="cls-2-user" cx="27.57" cy="17" rx="13.5" ry="17"/><g class="cls-3-user"><path class="cls-2-user" d="M25.06,30c-.1.76-.57,3.91-1,4.6-1.22,1.75-4.23,5.11-10.56,7.86C4.66,46.26,4.84,52.62,5,57.25c0,.56,0,1.09,0,1.6V59a17.24,17.24,0,0,1,4.17,0c5.53.69,7.51,3.76,12.83,6a27,27,0,0,0,11,2,26.54,26.54,0,0,0,13-3c3.69-2,5.4-4.35,9.7-5A14.48,14.48,0,0,1,60,59v-.45q0-.77,0-1.59c.14-4.64.32-11-8.58-14.8C45,39.4,42,36,40.73,34.26c-.48-.68-.64-3-.73-3.26C39,28.11,28,29.57,25.06,30Z" transform="translate(-4.93 -1)"/></g></g></g>
+                  </svg>
+               </div>
             </div>
          </div>
-      </nav>
-
+         <div class="divider"></div>
+      </div>
+      <div class="container-fluid px-4 py-3">
+         <div class="saldos py-2 d-flex justify-content-center pos-relative">
+            <div class="saldo_card d-flex flex-column center px-4 py-3 mx-2 mx-md-4">
+               <!-- Icono estilo 1 -->
+               <svg class="estilo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.07 64.68">
+                  <defs><style>.cls-1-adeuda{fill:#fff;}.cls-2-adeuda{fill:rgb(110, 110, 110);}.cls-3-adeuda{fill:#c1272d;}.cls-4-adeuda{opacity:0.75;}.cls-5-adeuda{fill:#333;}</style></defs><title>Adeuda</title><g id="Capa_2" data-name="Capa 2"><g id="saldo"><path class="cls-1-adeuda" d="M8.75,1.32h27.4a5.8,5.8,0,0,1,5.8,5.8V55.06a5.8,5.8,0,0,1-5.8,5.8H6.22a3.27,3.27,0,0,1-3.27-3.27V7.12A5.8,5.8,0,0,1,8.75,1.32Z"/><path class="cls-1-adeuda" d="M41,8.32l6,5v13a4,4,0,0,1-5,5H37Z"/><path class="cls-2-adeuda" d="M21,6.25a2.55,2.55,0,1,1,2.55-2.54A2.54,2.54,0,0,1,21,6.25Z"/><path class="cls-3-adeuda" d="M40.07,35.32a14,14,0,1,0-14-14A14,14,0,0,0,40.07,35.32ZM39.14,23c-2.69-1-5.44-2.43-5.44-5.78,0-2.71,1.79-4.76,4.71-5.45v-3H42v2.75a9.71,9.71,0,0,1,3.72,1l.43.22L45,16.54l-.77-.36a7.93,7.93,0,0,0-3.57-.87c-1.38,0-2.2.55-2.2,1.48s.77,1.36,3.18,2.33c3.57,1.34,5.1,3.12,5.1,5.95s-1.93,5-5,5.68v3.12H38.24V31a10,10,0,0,1-4.48-1.36l-.36-.23,1.12-3.87.64.38a8.75,8.75,0,0,0,4.27,1.2c1.53,0,2.52-.68,2.52-1.73C42,24.67,41.61,23.88,39.14,23Z"/><path class="cls-2-adeuda" d="M38.74,57.1H3.33l-.13,0V6a1.6,1.6,0,0,1,1.6-1.6H37.14A1.6,1.6,0,0,1,38.74,6V7H42V4.8A4.81,4.81,0,0,0,37.14,0H4.8A4.8,4.8,0,0,0,0,4.8V59.88a4.8,4.8,0,0,0,4.8,4.8H37.14A4.81,4.81,0,0,0,42,59.88V35.65H38.74Z"/><rect class="cls-1-adeuda" x="16.95" y="60.32" width="8" height="1" rx="0.43"/><g class="cls-4-adeuda"><path class="cls-5-adeuda" d="M18.41,52.79a3.34,3.34,0,0,1,1.33-.57,11.67,11.67,0,0,0,1.93-.64c2.36-1,5.1-4.17,5.23-4.31l0-.05a3.34,3.34,0,0,0,0-4.18,2.9,2.9,0,0,1-.35-.67,5.67,5.67,0,0,0-1.93-4.44h0a5.91,5.91,0,0,0-.92-1.3,4.34,4.34,0,0,0-1.32-.94s-.05-.06,0-.08l4.43-4.27a2.89,2.89,0,0,0-.61-4.13,3,3,0,0,0-3.75.38l-7.86,7.55a4.92,4.92,0,0,1-.39.33c-.81-2.64-1.9-4.16-3.21-4.53a2.5,2.5,0,0,0-2.32.56c-1.52,1.46-.5,3.86-.39,4.1,1.26,3.68.43,5.47-.37,6.3L6.19,43.46a6.64,6.64,0,0,0-1.14,2.15c-1.17,3.73,1.58,7.21,2,7.66H7c.44.4,3.75,3.34,7.55,2.39a6.5,6.5,0,0,0,2.2-1C17,54.46,18.38,52.81,18.41,52.79Zm-1.3-1.25c-2,.93-8-8.3-8-8.34s0-.05,0-.06a5.22,5.22,0,0,0,1-1.32c.86-1.75.82-4-.14-6.83l0-.07s-.68-1.54,0-2.18a.77.77,0,0,1,.66-.16,1.23,1.23,0,0,1,.58.4,30.7,30.7,0,0,1,2.31,4.7h0l.39-.13a4.11,4.11,0,0,0,2-1.18l8-7.65a1.14,1.14,0,1,1,1.58,1.65L19.46,36a.86.86,0,0,0,1.1,1.32l.3-.25c.5-.43,1.15.23,1.64.74a4,4,0,0,1,.67,1,.25.25,0,0,0,0,.07.84.84,0,0,0,.27.39,2.23,2.23,0,0,1,.23.22,4.16,4.16,0,0,1,1.16,3v.07a3.4,3.4,0,0,0,.6,1.43c.46.76.77,1.26.09,2.24-.22.25-2.68,3-4.58,3.82a9.2,9.2,0,0,1-1.65.54,8.91,8.91,0,0,0-1,.34A7,7,0,0,0,17.11,51.54Z"/></g></g></g>
+               </svg>
+               <!-- Icono estilo 2 -->
+               <svg class="estilo hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.98 56.06">
+                  <defs><style>.cls-1-adeuda-2{fill:#fff;}.cls-2-adeuda-2{fill:#c1272d;}.cls-3-adeuda-2{fill:#a7232d;}</style></defs><title>Adeuda</title><g id="Capa_2" data-name="Capa 2"><g id="iconos_2" data-name="iconos 2"><ellipse class="cls-1-adeuda-2" cx="19.5" cy="35.88" rx="11.5" ry="18"/><path class="cls-2-adeuda-2" d="M11.77,13.08s-32.08,42.11,9.69,43c0,0,41,0,1-45C15,10.41,11.77,13.08,11.77,13.08ZM22.1,33.52c4.48,1.58,6.29,3.65,6.29,7s-2.37,6.22-6.7,7v3.84H18V47.79a15.24,15.24,0,0,1-6.4-1.61l1.13-4.41A13.39,13.39,0,0,0,19,43.42c2.14,0,3.61-.82,3.61-2.33s-1.2-2.34-4-3.28c-4-1.35-6.78-3.24-6.78-6.89,0-3.32,2.33-5.91,6.36-6.7V20.64h3.69V24a13.61,13.61,0,0,1,5.47,1.24l-1.1,4.26a12.5,12.5,0,0,0-5.42-1.28c-2.45,0-3.24,1-3.24,2.11C17.58,31.52,18.9,32.31,22.1,33.52Z"/><path class="cls-3-adeuda-2" d="M21.82,9.08s2.79-8.6-.48-9A16.13,16.13,0,0,0,10.08,2.84c1.34,1.71,2.84,3.4,2.84,3.4L9.27,3.43a18.51,18.51,0,0,0-1.61,1.4L11.89,11S16.81,8.36,21.82,9.08Z"/></g></g>
+               </svg>
+               <span class="label">Adeuda</span>
+               <strong class="value">$128.365</strong>
+            </div>
+            <button type="button" class="saldo_traslado tooltipped" data-position="bottom" data-tooltip="Traslado de saldo">
+               <!-- Icono estilo 1 -->
+               <svg class="estilo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66.4 81.47">
+                  <defs><style>.cls-1-traslado{fill:#fff;}.cls-2-traslado{fill:#fcee21;}.cls-3-traslado{fill:#727270;}.cls-3-traslado,.cls-4-traslado{fill-rule:evenodd;}.cls-4-traslado{fill:var(--color-marca);}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="traslado"><ellipse class="cls-1-traslado" cx="33.78" cy="40.32" rx="10.57" ry="15.85"/><path class="cls-2-traslado" d="M33.93,57.35A16.44,16.44,0,1,0,17.49,40.91,16.44,16.44,0,0,0,33.93,57.35Zm-1.09-14.5c-3.16-1.14-6.39-2.84-6.39-6.78,0-3.18,2.11-5.59,5.53-6.4V26.18h4.18v3.23a11.36,11.36,0,0,1,4.36,1.17l.51.25-1.31,4.46-.9-.41a9.34,9.34,0,0,0-4.2-1C33,33.86,32,34.5,32,35.59c0,.94.9,1.6,3.73,2.73,4.19,1.58,6,3.67,6,7S39.5,51.19,36,52v3.66H31.78V52.27a11.71,11.71,0,0,1-5.26-1.59l-.42-.27,1.31-4.55.75.45a10.22,10.22,0,0,0,5,1.41c1.8,0,3-.8,3-2C36.14,44.84,35.74,43.91,32.84,42.85Z"/><path class="cls-3-traslado" d="M32.8,5.16C17.55,7.94,5.32,17.56,1.37,30.47a33.9,33.9,0,0,0,0,19c-.15-1.29-1.31-13.23,8-22,9.8-9.23,22.46-6.68,23.53-6.44v5.15L51.4,13,32.8,0Z"/><path class="cls-4-traslado" d="M33.6,76.32C48.85,73.53,61.08,63.92,65,51a33.91,33.91,0,0,0,0-19c.15,1.3,1.31,13.24-8,22-9.81,9.23-22.46,6.68-23.54,6.45V55.29L15,68.43l18.6,13Z"/></g></g>
+               </svg>
+               <!-- Icono estilo 2 -->
+               <svg class="estilo hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73.52 81.47">
+                  <defs><style>.cls-1-traslado-2{fill:#727270;}.cls-1-traslado-2,.cls-2-traslado-2{fill-rule:evenodd;}.cls-2-traslado-2{fill:var(--color-marca);}.cls-3-traslado-2{fill:#fcee21;}.cls-4-traslado-2{fill:#666;}.cls-5-traslado-2{fill:gray;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="iconos_2" data-name="iconos 2"><path class="cls-1-traslado-2" d="M32.8,5.16C17.55,7.94,5.32,17.56,1.37,30.47a33.9,33.9,0,0,0,0,19c-.15-1.29-1.31-13.23,8-22,9.8-9.23,22.46-6.68,23.53-6.44v5.15L51.4,13,32.8,0Z"/><path class="cls-2-traslado-2" d="M33.6,76.32C48.85,73.53,61.08,63.92,65,51a33.91,33.91,0,0,0,0-19c.15,1.3,1.31,13.24-8,22-9.81,9.23-22.46,6.68-23.54,6.45V55.29L15,68.43l18.6,13Z"/><ellipse class="cls-3-traslado-2" cx="11.1" cy="27.58" rx="5.74" ry="8.98"/><path class="cls-4-traslado-2" d="M7.24,16.21s-16,21,4.84,21.44c0,0,20.45,0,.51-22.44C8.87,14.88,7.24,16.21,7.24,16.21Zm5.16,10.2c2.23.79,3.14,1.82,3.14,3.51S14.35,33,12.19,33.4v1.91H10.35V33.53a7.56,7.56,0,0,1-3.2-.81l.57-2.2a6.64,6.64,0,0,0,3.12.83c1.07,0,1.8-.41,1.8-1.17s-.6-1.16-2-1.63c-2-.68-3.39-1.62-3.39-3.44,0-1.65,1.17-2.95,3.18-3.35V20h1.84v1.65a6.86,6.86,0,0,1,2.73.62l-.55,2.13a6.13,6.13,0,0,0-2.7-.64c-1.22,0-1.62.52-1.62,1.05S10.8,25.8,12.4,26.41Z"/><path class="cls-5-traslado-2" d="M12.26,14.21S13.65,9.92,12,9.74A8,8,0,0,0,6.4,11.1c.67.85,1.42,1.69,1.42,1.69L6,11.39a10,10,0,0,0-.8.7L7.3,15.16A9.22,9.22,0,0,1,12.26,14.21Z"/><ellipse class="cls-3-traslado-2" cx="55" cy="55.6" rx="9.4" ry="6.55" transform="translate(-1.3 109.88) rotate(-89.26)"/><path class="cls-4-traslado-2" d="M51.82,45.76s-15.69,20,4.39,20.72c0,0,19.7.26.77-21.61C53.41,44.5,51.82,45.76,51.82,45.76Zm4.84,9.89c2.14.79,3,1.8,3,3.43s-1.18,3-3.27,3.31l0,1.84-1.78,0,0-1.72a7.21,7.21,0,0,1-3.07-.82l.57-2.11a6.39,6.39,0,0,0,3,.83c1,0,1.75-.37,1.76-1.1s-.57-1.13-1.9-1.6c-1.93-.67-3.24-1.6-3.22-3.35s1.16-2.83,3.1-3.19l0-1.72,1.77,0,0,1.59a6.53,6.53,0,0,1,2.62.63l-.55,2a6.16,6.16,0,0,0-2.6-.65c-1.18,0-1.57.49-1.57,1S55.13,55.05,56.66,55.65Z"/><path class="cls-5-traslado-2" d="M56.68,43.9s1.39-4.11-.18-4.31a7.75,7.75,0,0,0-5.43,1.24c.63.83,1.35,1.65,1.35,1.65l-1.74-1.37a7.67,7.67,0,0,0-.79.66l2,3A8.86,8.86,0,0,1,56.68,43.9Z"/><path class="cls-4-traslado-2" d="M45,57.52a9.82,9.82,0,0,0,.06,2.92c-15.55-.59-3.34-16.19-3.34-16.19s1.24-1,4-.69A48.66,48.66,0,0,1,49,47.66a37.4,37.4,0,0,0-2.29,4.25v0a13.06,13.06,0,0,0-.79,1.75A14.45,14.45,0,0,0,45,57.52Z"/><path class="cls-5-traslado-2" d="M45.52,42.8s1.09-3.21-.13-3.37a6.12,6.12,0,0,0-4.25,1c.5.65,1,1.29,1,1.29l-1.35-1.07a7,7,0,0,0-.62.51l1.57,2.33A6.88,6.88,0,0,1,45.52,42.8Z"/><path class="cls-4-traslado-2" d="M66.09,58.3a9,9,0,0,1,.09,1.24,8.06,8.06,0,0,1-.08,1.17h.4s15.39.2.6-16.89c-2.79-.28-4,.7-4,.7a29.59,29.59,0,0,0-2.16,3.28l1.76,2.52a29.55,29.55,0,0,1,2.09,4.08A30,30,0,0,1,66.09,58.3Z"/><path class="cls-5-traslado-2" d="M66.86,43.08s1.09-3.22-.14-3.37a6.05,6.05,0,0,0-4.24,1c.5.65,1.05,1.29,1.05,1.29l-1.36-1.08c-.2.16-.41.33-.61.52l1.56,2.33A6.9,6.9,0,0,1,66.86,43.08Z"/></g></g>
+               </svg>
+            </button>
+            <div class="saldo_card saldo_rec d-flex flex-column center px-4 py-3 mx-2 mx-md-4">
+               <!-- Icono estilo 1 -->
+               <svg class="estilo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.07 64.68">
+                  <defs><style>.cls-1-saldo-recarga{fill:#fff;}.cls-2-saldo-recarga{fill:rgb(110, 110, 110);}.cls-3-saldo-recarga{fill:#fcee21;}</style></defs><title>Recargas</title><g id="Capa_2" data-name="Capa 2"><g id="saldo_recarga" data-name="saldo recarga"><path class="cls-1-saldo-recarga" d="M8.75,1.32h27.4a5.8,5.8,0,0,1,5.8,5.8V55.06a5.8,5.8,0,0,1-5.8,5.8H6.22a3.27,3.27,0,0,1-3.27-3.27V7.12A5.8,5.8,0,0,1,8.75,1.32Z"/><path class="cls-1-saldo-recarga" d="M41,8.32l6,5v13a4,4,0,0,1-5,5H37Z"/><path class="cls-2-saldo-recarga" d="M38.74,57.1H3.33l-.13,0V6a1.6,1.6,0,0,1,1.6-1.6H37.14A1.6,1.6,0,0,1,38.74,6V7H42V4.8A4.81,4.81,0,0,0,37.14,0H4.8A4.8,4.8,0,0,0,0,4.8V59.88a4.8,4.8,0,0,0,4.8,4.8H37.14A4.81,4.81,0,0,0,42,59.88V35.65H38.74Z"/><path class="cls-2-saldo-recarga" d="M21,6.25a2.55,2.55,0,1,1,2.55-2.54A2.54,2.54,0,0,1,21,6.25Z"/><path class="cls-3-saldo-recarga" d="M40.07,35.32a14,14,0,1,0-14-14A14,14,0,0,0,40.07,35.32ZM39.14,23c-2.69-1-5.44-2.43-5.44-5.78,0-2.71,1.79-4.76,4.71-5.45v-3H42v2.75a9.71,9.71,0,0,1,3.72,1l.43.22L45,16.54l-.77-.36a7.93,7.93,0,0,0-3.57-.87c-1.38,0-2.2.55-2.2,1.48s.77,1.36,3.18,2.33c3.57,1.34,5.1,3.12,5.1,5.95s-1.93,5-5,5.68v3.12H38.24V31a10,10,0,0,1-4.48-1.36l-.36-.23,1.12-3.87.64.38a8.75,8.75,0,0,0,4.27,1.2c1.53,0,2.52-.68,2.52-1.73C42,24.67,41.61,23.88,39.14,23Z"/><rect class="cls-1-saldo-recarga" x="16.95" y="60.32" width="8" height="1" rx="0.43"/></g></g>
+               </svg>
+               <!-- Icono estilo 2 -->
+               <svg class="estilo hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.98 56.06">
+                  <defs><style>.cls-1-saldo-recargas-2{fill:#fcee21;}.cls-2-saldo-recargas-2{fill:#666;}.cls-3-saldo-recargas-2{fill:gray;}</style></defs><title>Recargas</title><g id="Capa_2" data-name="Capa 2"><g id="iconos_2" data-name="iconos 2"><ellipse class="cls-1-saldo-recargas-2" cx="19.5" cy="35.88" rx="11.5" ry="18"/><path class="cls-2-saldo-recargas-2" d="M11.77,13.08s-32.08,42.11,9.69,43c0,0,41,0,1-45C15,10.41,11.77,13.08,11.77,13.08ZM22.1,33.52c4.48,1.58,6.29,3.65,6.29,7s-2.37,6.22-6.7,7v3.84H18V47.79a15.24,15.24,0,0,1-6.4-1.61l1.13-4.41A13.39,13.39,0,0,0,19,43.42c2.14,0,3.61-.82,3.61-2.33s-1.2-2.34-4-3.28c-4-1.35-6.78-3.24-6.78-6.89,0-3.32,2.33-5.91,6.36-6.7V20.64h3.69V24a13.61,13.61,0,0,1,5.47,1.24l-1.1,4.26a12.5,12.5,0,0,0-5.42-1.28c-2.45,0-3.24,1-3.24,2.11C17.58,31.52,18.9,32.31,22.1,33.52Z"/><path class="cls-3-saldo-recargas-2" d="M21.82,9.08s2.79-8.6-.48-9A16.13,16.13,0,0,0,10.08,2.84c1.34,1.71,2.84,3.4,2.84,3.4L9.27,3.43a18.51,18.51,0,0,0-1.61,1.4L11.89,11S16.81,8.36,21.82,9.08Z"/></g></g>
+               </svg>
+               <span class="label">Saldo Recargas</span>
+               <strong class="value">$1'128.365</strong>
+            </div>
+            <div class="saldo_card saldo_mult d-flex flex-column center px-4 py-3 mx-2 mx-md-4">
+               <!-- Icono estilo 1 -->
+               <svg class="estilo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.29 55.67">
+                  <defs><style>.cls-1-saldo-multi{fill:#fff;}.cls-3-saldo-multi{fill:rgb(110, 110, 110);}.cls-4-saldo-multi{fill:#fcee21;}.cls-5-saldo-multi{font-size:40.33px;fill:#666;font-family:Pacific-Again, Pacific Again;}</style></defs><title>Multiproducto</title><g id="Capa_2" data-name="Capa 2"><g id="saldo_multiproducto" data-name="saldo multiproducto"><path class="cls-1-saldo-multi" d="M3,3.45H61.29a2.87,2.87,0,0,1,2.87,2.87V49.57a2.88,2.88,0,0,1-2.87,2.88H3A2.88,2.88,0,0,1,.17,49.57V6.32A2.87,2.87,0,0,1,3,3.45Z"/><g><path class="cls-3-saldo-multi" d="M61,2.91H3.69A3.7,3.7,0,0,0,0,6.61v43a3.7,3.7,0,0,0,3.69,3.69H61a3.69,3.69,0,0,0,3.69-3.69v-43A3.7,3.7,0,0,0,61,2.91Zm-.57,45.78a1.14,1.14,0,0,1-1.14,1.14H5.4a1.14,1.14,0,0,1-1.14-1.14V17.83H60.39ZM1.78,15.09V11.68H5.19v3.41Zm7.67,0V11.68h3.41v3.41Zm7.48,0V11.68h3.41v3.41ZM63,8.88H1.7V6.61a2,2,0,0,1,2-2H61a2,2,0,0,1,2,2Z"/></g><circle class="cls-1-saldo-multi" cx="53.17" cy="15.45" r="13"/><path class="cls-4-saldo-multi" d="M53.29,29.45a14,14,0,1,0-14-14A14,14,0,0,0,53.29,29.45ZM52.37,17.1c-2.69-1-5.45-2.42-5.45-5.78,0-2.7,1.8-4.75,4.71-5.44v-3h3.56V5.65a9.91,9.91,0,0,1,3.72,1l.43.22-1.11,3.79-.78-.35a7.93,7.93,0,0,0-3.57-.87c-1.38,0-2.2.55-2.2,1.47s.77,1.37,3.18,2.33c3.57,1.34,5.1,3.13,5.1,6s-1.92,5-5,5.68V28H51.46V25.13A10,10,0,0,1,47,23.77l-.36-.23,1.12-3.88.64.38a8.66,8.66,0,0,0,4.27,1.21c1.53,0,2.53-.68,2.53-1.73C55.18,18.8,54.84,18,52.37,17.1Z"/><text class="cls-5-saldo-multi" transform="translate(17.3 40.43)">m</text></g></g>
+               </svg>
+               <!-- Icono estilo 2 -->
+               <svg class="estilo hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 63.82 47.31">
+                  <defs><style>.cls-1-saldo-multi-2{fill:#fcee21;}.cls-2-saldo-multi-2{fill:#666;}.cls-3-saldo-multi-2{fill:gray;}</style></defs><title>Multiproducto</title><g id="Capa_2" data-name="Capa 2"><g id="iconos_2" data-name="iconos 2"><ellipse class="cls-1-saldo-multi-2" cx="31.32" cy="28.23" rx="11.5" ry="16.5"/><path class="cls-2-saldo-multi-2" d="M25.51,11S-1.57,46.57,33.68,47.31c0,0,34.59,0,.86-38C28.27,8.79,25.51,11,25.51,11Zm8.71,17.25c3.78,1.33,5.31,3.08,5.31,5.94s-2,5.25-5.66,5.88v3.24H30.76v-3A12.74,12.74,0,0,1,25.35,39l1-3.72a11.22,11.22,0,0,0,5.28,1.4c1.81,0,3.05-.7,3.05-2s-1-2-3.37-2.77c-3.4-1.14-5.72-2.73-5.72-5.82,0-2.79,2-5,5.37-5.65v-3H34v2.79a11.5,11.5,0,0,1,4.61,1.05l-.92,3.59a10.67,10.67,0,0,0-4.58-1.08c-2.06,0-2.73.89-2.73,1.78C30.41,26.6,31.52,27.27,34.22,28.29Z"/><path class="cls-3-saldo-multi-2" d="M34,7.66S36.34.41,33.58.1a13.67,13.67,0,0,0-9.5,2.29c1.13,1.45,2.4,2.87,2.4,2.87L23.4,2.89c-.46.36-.91.75-1.37,1.18l3.58,5.19A15.56,15.56,0,0,1,34,7.66Z"/><path class="cls-2-saldo-multi-2" d="M13.83,31.84A17.14,17.14,0,0,0,14,37c-27.3-.68-6.23-28.34-6.23-28.34s2.16-1.75,7.06-1.31a86.2,86.2,0,0,1,5.75,7.13A64.73,64.73,0,0,0,16.64,22v-.08a24.72,24.72,0,0,0-1.35,3.07A25.21,25.21,0,0,0,13.83,31.84Z"/><path class="cls-3-saldo-multi-2" d="M14.39,6S16.22.32,14.07.08A10.65,10.65,0,0,0,6.64,1.87C7.53,3,8.52,4.11,8.52,4.11L6.11,2.26c-.35.28-.71.58-1.06.92L7.84,7.24A12.12,12.12,0,0,1,14.39,6Z"/><path class="cls-2-saldo-multi-2" d="M50.84,32.72A15.1,15.1,0,0,1,51,34.9a15.58,15.58,0,0,1-.11,2l.69,0s27,0,.68-29.65c-4.91-.44-7.06,1.31-7.06,1.31a52,52,0,0,0-3.71,5.81l3.14,4.38a53.65,53.65,0,0,1,3.77,7.11A52.47,52.47,0,0,1,50.84,32.72Z"/><path class="cls-3-saldo-multi-2" d="M51.84,6S53.68.32,51.52.08A10.63,10.63,0,0,0,44.1,1.87C45,3,46,4.11,46,4.11L43.57,2.26c-.36.28-.71.58-1.07.92l2.8,4.06A12.1,12.1,0,0,1,51.84,6Z"/></g></g>
+               </svg>
+               <span class="label">Saldo Multiproducto</span>
+               <strong class="value">$525.000</strong>
+            </div>
+            <div class="saldo_card d-flex flex-column center px-4 py-3 mx-2 mx-md-4">
+               <!-- Icono estilo 1 -->
+               <svg class="estilo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.46 65.82">
+                  <defs><style>.cls-1-ganancias{fill:#f2f2f2;}.cls-2-ganancias{fill:#8cc63f;}.cls-3-ganancias{fill:rgb(110, 110, 110);}</style></defs><title>Ganancias</title><g id="Capa_2" data-name="Capa 2"><g id="ganancias"><path class="cls-1-ganancias" d="M8.77,23.7l4,1,5,1,3,1h2a3.1,3.1,0,0,1,1-2c1-1,3,0,3,0a4.94,4.94,0,0,1,3,1c1,1,3,3,3,4s1,2,1,4,1,2,1,3,1,1,2,2,0,2,1,2a3.49,3.49,0,0,1,2,1s-1,0-1,2a9,9,0,0,1-1,5c-1,2-5,11-5,11s-8-1-9-1-6-2-8-2-8-1-8-1l-5-3-2-2,2-4-1-4,1-3,1-2v-3l2-3,1-4,1-3Z"/><path class="cls-2-ganancias" d="M4.77,6.7l4-3,6-2s0,2,1,2a3.49,3.49,0,0,1,2,1v2c0,1-.61,3.46-.81,4.73s.81.27.81.27v4l1,6,1,4-8-3-7-12Z"/><polygon class="cls-2-ganancias" points="15.77 1.7 18.44 0.38 20.77 0.7 29.77 3.7 31.77 6.7 31.77 9.7 22.77 25.7 19.77 24.7 17.77 14.7 17.77 3.7 15.77 1.7"/><path class="cls-3-ganancias" d="M1.29,46.66C.13,48.45-.54,51,.56,52.81c1.38,2.35,4,2.94,6.5,3.54,7.89,1.88,16,2.79,23.84,5a.84.84,0,0,1,.55,1h0a.82.82,0,0,0,.52,1l7.36,2.4a.82.82,0,0,0,1-.52L48.42,40.5a.81.81,0,0,0-.52-1l-7.36-2.4a.81.81,0,0,0-1,.52l-.36,1.11-.07.2c-2-1-3.06-3.5-4.29-6.41-1.67-4-3.56-8.45-8.45-10.5a.8.8,0,0,1-.45-1.07c1.84-4,4.63-8.95,8.31-12.52l.51-.5-.43-.58C34,6.94,26.91-2.26,17.91.52L17.4.68A12.39,12.39,0,0,1,18.86,1l.62.19a.82.82,0,0,1,.57.84L20,2.71s-.05.76-.1,2a4.16,4.16,0,0,0,2.18-2.38A.83.83,0,0,1,23,1.79a15.27,15.27,0,0,1,6.94,3.42.79.79,0,0,1,.22.93,3.71,3.71,0,0,0,0,3.5.8.8,0,0,1,0,.95,53.84,53.84,0,0,0-6.4,11.2q-.48,1-.9,2l-2.64-.11c-2.36-7.75-1.4-20.94-1.39-21.09l0-.65-.62-.19C9.21-1,2.12,8.17,1.83,8.57l-.44.57.52.5A41.6,41.6,0,0,1,9.68,21a.81.81,0,0,1-.62,1.17,4.19,4.19,0,0,0-3.33,1.87,7,7,0,0,0-.48,5.18.79.79,0,0,1-.39.87c-2.56,1.32-3.32,4.65-2.55,7.49a.82.82,0,0,1-.2.79c-1.89,2-1.86,4.94-.75,7.47A.8.8,0,0,1,1.29,46.66Zm17.5-21.95a25.73,25.73,0,0,0-6.67-2.34A52,52,0,0,0,5.6,11.3c1.45-1.27.71-3.36.16-4.46a15.09,15.09,0,0,1,8-3.9C14.18,4,15.15,6,17,6a90.93,90.93,0,0,0,.22,9.87c-.65-1.33-2.62-1.73-4.43-.89S10,17.63,10.6,19s2.62,1.78,4.45.94a4,4,0,0,0,2.29-2.54A35,35,0,0,0,18.79,24.71ZM25.5,21.8l-.06.18h0C25.45,21.91,25.48,21.86,25.5,21.8ZM4.4,46.86a1.06,1.06,0,0,0,.06-1.11C3.19,43.56,2.81,41,5.1,39.37a1.09,1.09,0,0,0,.25-1.32c-1.09-2.25-.68-5.55,2.23-5.89a1.12,1.12,0,0,0,.75-1.58A13.4,13.4,0,0,1,7.88,29a5,5,0,0,1,.08-3c.55-1.23,2.33-1.12,3.42-.95a1.08,1.08,0,0,1,.19,0v0l.08,0c3.62.63,7.06,2.5,10.23,4.23a1.12,1.12,0,0,0,1.66-.58,32.78,32.78,0,0,1,1.21-3.7c3.93,1.49,5.5,5.2,7,8.8,1.34,3.18,3.21,6.79,6.3,8.08L32.55,58.53c-6.66-1.94-14.11-2.84-20.9-4.22-2.39-.48-5.46-.85-7.59-2.16S3.14,48.32,4.4,46.86Z"/><path class="cls-3-ganancias" d="M22.35,13.77c1.82.84,2.79,2.63,2.16,4s-2.62,1.78-4.44.93a4.45,4.45,0,0,1-.77-.45c-.19-1.5-.31-3-.39-4.56A4,4,0,0,1,22.35,13.77Z"/></g></g>
+               </svg>
+               <!-- Icono estilo 2 -->
+               <svg class="estilo hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 66">
+                  <defs><style>.cls-1-ganancias-2{fill:#ccc;}.cls-2-ganancias-2{fill:#e6e6e6;}.cls-3-ganancias-2{fill:#666;}.cls-4-ganancias-2{fill:#fff;}.cls-5-ganancias-2{fill:#fcee21;}</style></defs><title>Ganancias</title><g id="Capa_2" data-name="Capa 2"><g id="iconos_2" data-name="iconos 2"><circle class="cls-1-ganancias-2" cx="33" cy="33" r="33"/><path class="cls-2-ganancias-2" d="M12,44l1,14,3,2,9,1H41l9-3,14-9V46l-4-3H55l-8,7-6,2H34l8-2,1-6s-4-3-6-3-20,1-20,1Z"/><path class="cls-3-ganancias-2" d="M63,43.39a8.88,8.88,0,0,0-5.23-1.77c-1.89,0-4.61.68-6.93,3.93a11.17,11.17,0,0,1-6.75,4.13s-.05,0,0-.06a5,5,0,0,0,.29-1.78c0-4.51-3.58-7.91-8.55-7.93L18,39.93a8.76,8.76,0,0,0-4.63,1.34,0,0,0,0,1-.06,0v-.49A1.76,1.76,0,0,0,11.6,39H7a5.85,5.85,0,0,0-1.36.56C1.87,41.74,2,47.7,2,48.55V54c0,.83,0,6.31,3.64,8.41A5.91,5.91,0,0,0,7,63H11.6a1.76,1.76,0,0,0,1.75-1.75v-.79a6.38,6.38,0,0,1,.74.46A12.83,12.83,0,0,0,20,62.62h16.3A38,38,0,0,0,63.56,50.86c1-1.17,2.14-2.38,2-3.89S64.46,44.55,63,43.39Zm-1.59,5.53A35,35,0,0,1,36.29,59.73H20c-2.76,0-5.73-2.16-5.76-2.18a1.43,1.43,0,0,0-.86-.28h0V46a2.52,2.52,0,0,1,.89-1.78h0l.32-.24A5.81,5.81,0,0,1,18,42.82H35.78c2.83,0,5.68,1.64,5.66,5,0,2-1.3,2.05-1.37,2.07H27.18a1.52,1.52,0,0,0-1.55,1.24,1.44,1.44,0,0,0,1.43,1.65H41.64a14.5,14.5,0,0,0,11.5-5.49.1.1,0,0,0,0,0,5.61,5.61,0,0,1,4.59-2.73,6.06,6.06,0,0,1,3.43,1.13c1.44,1.15,1.49,1.53,1.49,1.55C62.69,47.49,61.76,48.53,61.41,48.92Z"/><circle class="cls-4-ganancias-2" cx="34.09" cy="31" r="3.71"/><path class="cls-5-ganancias-2" d="M34.13,35a4,4,0,1,0-4-4A4,4,0,0,0,34.13,35Zm-.27-3.53c-.77-.28-1.55-.69-1.55-1.65a1.58,1.58,0,0,1,1.34-1.55v-.85h1v.78a2.7,2.7,0,0,1,1.06.29l.12.06-.31,1.08-.23-.1a2.26,2.26,0,0,0-1-.25c-.39,0-.63.16-.63.42s.22.4.91.67c1,.38,1.46.89,1.46,1.7a1.65,1.65,0,0,1-1.41,1.62v.89h-1v-.82a2.76,2.76,0,0,1-1.28-.38l-.1-.07.32-1.11.18.11a2.48,2.48,0,0,0,1.22.35c.44,0,.72-.2.72-.5S34.57,31.73,33.86,31.47Z"/><circle class="cls-4-ganancias-2" cx="24.51" cy="21.44" r="5.05"/><path class="cls-5-ganancias-2" d="M24.56,26.87a5.44,5.44,0,1,0-5.43-5.43A5.43,5.43,0,0,0,24.56,26.87Zm-.36-4.79c-1-.38-2.11-.94-2.11-2.25a2.16,2.16,0,0,1,1.83-2.11V16.56H25.3v1.07a3.75,3.75,0,0,1,1.44.39l.17.08-.43,1.48-.3-.14a3.15,3.15,0,0,0-1.39-.34c-.53,0-.85.22-.85.58s.3.53,1.23.9c1.39.52,2,1.21,2,2.31a2.26,2.26,0,0,1-1.92,2.21v1.21H23.85V25.2a4.06,4.06,0,0,1-1.74-.53L22,24.58l.44-1.51.24.15a3.4,3.4,0,0,0,1.66.47c.6,0,1-.26,1-.67S25.16,22.43,24.2,22.08Z"/><circle class="cls-4-ganancias-2" cx="36.56" cy="9.5" r="6.96"/><path class="cls-5-ganancias-2" d="M36.63,17a7.5,7.5,0,1,0-7.5-7.5A7.5,7.5,0,0,0,36.63,17Zm-.5-6.61c-1.44-.52-2.92-1.3-2.92-3.1a3,3,0,0,1,2.53-2.92V2.78h1.9V4.25a5.2,5.2,0,0,1,2,.54l.24.11-.6,2-.42-.19a4.13,4.13,0,0,0-1.91-.47c-.74,0-1.18.3-1.18.79s.41.73,1.7,1.25C39.38,9,40.2,10,40.2,11.51a3.11,3.11,0,0,1-2.65,3v1.67H35.64V14.68a5.35,5.35,0,0,1-2.4-.72l-.19-.13.6-2.07L34,12a4.7,4.7,0,0,0,2.29.65c.82,0,1.35-.37,1.35-.93C37.63,11.29,37.45,10.87,36.13,10.39Z"/></g></g>
+               </svg>
+               <span class="label">Ganancias</span>
+               <strong class="value">$325.060</strong>
+            </div>
+         </div>
+      </div>
    </header>
 
    <main>
-      
+      <div class="container-fluid">
+         <div class="carousel-container px-4 pos-relative">
+            <div class="carousel carousel-slider pg-principal">
+               <a class="carousel-item" href="#one!"><img src="https://source.unsplash.com/random/1600x340?phone,wireless"></a>
+               <a class="carousel-item" href="#two!"><img src="https://source.unsplash.com/random/1600x340?software"></a>
+               <a class="carousel-item" href="#three!"><img src="https://source.unsplash.com/random/1600x340?smile"></a>
+               <a class="carousel-item" href="#four!"><img src="https://source.unsplash.com/random/1600x340?laptop"></a>
+            </div>
+            <div class="carousel_prev carousel_arrow white py-3 px-1">
+               <i class="material-icons medium">chevron_left</i>
+            </div>
+            <div class="carousel_next carousel_arrow white py-3 px-1">
+               <i class="material-icons medium">chevron_right</i>
+            </div>
+         </div>
+      </div>
    </main>
 
    <footer id="pg-footer">
 
    </footer>
+
+   <div class="fixed-action-btn">
+      <a class="btn-floating btn-large color-principal-marca">
+         <i class="large material-icons">mode_edit</i>
+      </a>
+      <ul>
+         <li><a class="btn-floating red modal-trigger tooltipped" data-position="top" data-tooltip="Cambiar color" href="#modal-seleccion-color"><i class="material-icons">color_lens</i></a></li>
+      </ul>
+   </div>
+   
+   
+   <!-- Remover. Solo para esteban -->
+   <!-- Modal Structure -->
+   <div id="modal-seleccion-color" class="modal bottom-sheet">
+      <div class="modal-content">
+         <div class="row">
+            <div class="col-sm-12 col-md-6">
+               <h5>Seleccione color</h5>
+               <label for="color-marca" class="btn">Abrir Paleta de Colores</label>
+               <input type="color" name="color-marca" id="color-marca" class="hide" value="#B2C52D">
+            </div>
+            <div class="col-sm-12 col-md-6">
+               <h5>Seleccione estilo de iconos</h5>
+               <div class="switch">
+                  <label style="font-size: 1.2rem">
+                     Estilo 1
+                     <input type="checkbox" id="toggle-estilo">
+                     <span class="lever"></span>
+                     Estilo 2
+                  </label>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal-footer">
+         <a href="#!" class="modal-close waves-effect waves-green btn color-principal-marca" id="btn-cambiar-color">Cambiar</a>
+      </div>
+   </div>
 
    <script src="js/materialize.js"></script>
    <script src="js/main.js"></script>
