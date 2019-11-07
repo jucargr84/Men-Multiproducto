@@ -1,35 +1,213 @@
-.top-info li:not(:first-of-type){
-   border-left: 1px solid lightgray;
+body{
+   font-family: 'Lato', sans-serif;
 }
-.top-info_value{
-   font-size: 20px;
-   font-weight: 300;
+.color-principal-marca{
+   background-color: var(--color-marca);
 }
-.top-info_traslado{
-   line-height: 14px;
+
+/* Header top aviso */
+.header-top_aviso{
+   overflow-x: hidden;
+   position: relative;
+   background-color: rgba(0, 0, 0, 0.1);
 }
-nav.menu{
-   height: auto;
+
+.header-top_aviso::before,
+.header-top_aviso::after{
+   position: absolute;
+   content: '';
+   top: 0;
+   bottom: 0;
+   z-index: 1;
+   width: 9px;
 }
-.nav-wrapper .logo{
-   max-width: 220px;
+.header-top_aviso::before{
+   left: 0;
+   background: linear-gradient(to right, rgba(0, 0, 0, 0.1), transparent);
 }
-.nav-wrapper .logo img{
-   display: block;
+.header-top_aviso::after{
+   right: 0;
+   background: linear-gradient(to left, rgba(0, 0, 0, 0.1), transparent);
+}
+
+
+
+.header-top_aviso_texto{
+   white-space: nowrap;
+   animation: slide-aviso-top 25s linear infinite;
+   transform: translateX(100%);
+   margin: 0 0 0 0;
+}
+.header-top_aviso:hover .header-top_aviso_texto{
+   animation-play-state: paused;
+}
+@keyframes slide-aviso-top{
+   0%{
+      transform: translateX(100%);
+   }
+   100%{
+      transform: translateX(-100%);
+   }
+}
+/* Header top aviso */
+.logo-marca img{
+   max-width: 250px;
+}
+
+.menu li label{
+   padding: 12px 20px;
+   border-radius: 7px;
+   margin-left: 5px;
+   color: rgb(60, 60, 60);
+   font-size: 16px;
+   cursor: pointer;
+}
+
+.menu li:hover label,
+input[name="menu_item"]:checked + label{
+   background-color: rgb(226, 226, 226);
+}
+
+.info-usuario{
+   position: relative;
+   max-width: 230px;
    width: 100%;
-}
-.menu_contenido_opcion{
-   border-bottom-color: inherit;
-   border-bottom-style: solid;
-   /* border-bottom-width: 4px; */
-   border-bottom-width: 0;
-
-   overflow-y: hidden;
-   height: 0;
-   transition: border .3s;
+   border-radius: 10px;
 }
 
-.menu_contenido_opcion:target{
-   height: auto;
-   border-bottom-width: 4px;
+.info-usuario_codigo,
+.info-usuario_icono{
+   position: absolute;
+   top: 0;
 }
+
+.info-usuario_codigo{
+   position: absolute;
+   right: 0;
+   font-size: .9rem;
+}
+
+.info-usuario_icono{
+   left: 0;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   padding: 5px 10px;
+   background-color: white;
+   border-radius: 50%;
+   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.info-usuario_icono svg{
+   width: 25px;
+}
+
+.recarga_aqui{
+   cursor: pointer;
+   border-radius: 7px;
+   border: 1px solid var(--color-marca);
+}
+
+.recarga_aqui svg{
+   width: 40px;
+   animation: oscile-svg 9s ease-out infinite;
+}
+
+.recarga_aqui strong{
+   font-size: 1.1rem;
+   font-weight: 700;
+}
+
+@keyframes oscile-svg{
+   16%,12%,8%,4%,0%{
+      transform: rotate(0);
+   }
+   10%,2%{
+      transform: rotate(-30deg);
+   }
+   14%,6%{
+      transform: rotate(30deg);
+   }
+}
+
+/* Tarjetas de saldo */
+.saldo_card{
+   border: 1px solid rgb(190, 190, 190);
+   max-width: 200px;
+   width: 100%;
+   border-radius: 10px;
+   transition: border .2s ease-in-out;
+}
+
+.saldo_card:hover svg{
+   transform: scale(1.2);
+}
+
+.saldo_card svg{
+   height: 45px;
+   margin-bottom: 10px;
+   transition: transform .2s ease-in;
+}
+.saldo_card .label{
+   color: rgb(94, 94, 94);
+   font-size: 0.9rem;
+}
+.saldo_card .value{
+   font-weight: 700;
+   font-size: 1.1rem;
+}
+
+.saldo_traslado{
+   position: absolute;
+   background-color: white;
+   border: 5px solid var(--color-marca);
+   border-radius: 50%;
+   padding: 5px 10px;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: 1;
+   cursor: pointer;
+   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.35);
+}
+
+.saldo_traslado:hover ~ .saldo_rec,
+.saldo_traslado:hover ~ .saldo_mult,
+.saldo_traslado:hover ~ .saldo_rec .cls-2-saldo-recarga,
+.saldo_traslado:hover ~ .saldo_mult .cls-3-saldo-multi,
+.saldo_traslado:hover ~ .saldo_rec .cls-3-saldo-recargas-2,
+.saldo_traslado:hover ~ .saldo_mult .cls-3-saldo-multi-2,
+.saldo_traslado:hover ~ .saldo_rec .cls-2-saldo-recargas-2,
+.saldo_traslado:hover ~ .saldo_mult .cls-2-saldo-multi-2{
+   border: 1px solid var(--color-marca);
+   fill: var(--color-marca) !important;
+}
+
+.saldo_traslado svg{
+   width: 45px;
+}
+
+/* Tarjetas de saldo */
+
+/* Carousel */
+.carousel_arrow{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   cursor: pointer;
+   color: grey;
+   transition: color .2s;
+}
+
+.carousel_arrow:hover i.material-icons{
+   color: black;
+}
+
+.carousel_prev{
+   left: 0;
+   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.carousel_next{
+   right: 0;
+   box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+/* Carousel */
