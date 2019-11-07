@@ -51,13 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
     },intervalCarousel)
   })
 
-  document.querySelector('input#toggle-estilo').addEventListener('input', function(evt){
-    let $svgs = document.querySelectorAll('svg.estilo');
-    $svgs.forEach( function(elem){
-      elem.classList.toggle('hide')
-    })
-  })
-
 });
 
 // Remover. Solo para esteban
