@@ -50,13 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
       carouselInstance.next();
     },intervalCarousel)
   })
-
-  // Remover. Solo para esteban
-  document.querySelector('input#icono-recarga').addEventListener('input', function(){
-    let svgRecarga = document.querySelectorAll('.recarga_aqui svg:not(.svg-text)');
-    svgRecarga.forEach(elem => elem.classList.toggle('hide'))
-  })
-
 });
 
 // Remover. Solo para esteban
