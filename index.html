@@ -154,24 +154,24 @@
                </div>
             </div>
          </div>
-         <div class="divider mt-3"></div>
+         <div class="divider mt-3 d-none d-md-block"></div>
       </div>
    </header>
 
    <main>
       <div class="container-fluid">
-         <div class="carousel-container px-4 pos-relative mb-5">
+         <div class="carousel-container px-0 px-md-4 pos-relative mb-5">
             <div class="carousel carousel-slider pg-principal">
                <a class="carousel-item" href="#one!"><img src="https://source.unsplash.com/random/1589x536?phone,wireless"></a>
                <a class="carousel-item" href="#two!"><img src="https://source.unsplash.com/random/1589x536?software"></a>
                <a class="carousel-item" href="#three!"><img src="https://source.unsplash.com/random/1589x536?smile"></a>
                <a class="carousel-item" href="#four!"><img src="https://source.unsplash.com/random/1589x536?laptop"></a>
             </div>
-            <div class="carousel_prev carousel_arrow white py-3 px-1">
-               <i class="material-icons md-medium small">chevron_left</i>
+            <div class="carousel_prev carousel_arrow white py-3 px-1 d-none d-md-block">
+               <i class="material-icons medium">chevron_left</i>
             </div>
-            <div class="carousel_next carousel_arrow white py-3 px-1">
-               <i class="material-icons md-medium small">chevron_right</i>
+            <div class="carousel_next carousel_arrow white py-3 px-1 d-none d-md-block">
+               <i class="material-icons medium">chevron_right</i>
             </div>
          </div>
       </div>
@@ -180,7 +180,9 @@
    <footer class="page-footer color-principal-marca">
       <div class="footer-copyright">
         <div class="container">
-          <strong>Todos los derechos reservados - 2019</strong>
+           <p class="m-0 center">
+              <strong>Todos los derechos reservados - 2019</strong>
+           </p>
         </div>
       </div>
     </footer>
@@ -202,7 +204,7 @@
          <div class="row">
             <div class="col-sm-12 col-md-6">
                <h5>Seleccione color</h5>
-               <label for="color-marca" class="btn abrir-paleta">Abrir Paleta de Colores</label>
+               <label for="color-marca" class="btn">Abrir Paleta de Colores</label>
                <input type="color" name="color-marca" id="color-marca" class="hide" value="#B2C52D">
             </div>
          </div>
