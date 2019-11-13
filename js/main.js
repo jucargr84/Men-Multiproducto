@@ -25,8 +25,24 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Remover. Solo para esteban
+  const hasColorInputSupport = (document) => {
+    try {
+        const input = document.createElement('input');
+        input.type = 'color';
+        input.value = '!';
+        return input.type === 'color' && input.value !== '!';
+    } catch (e) {
+        return false;
+    };
+  };
   const $btnCambioColor = document.querySelector('#btn-cambiar-color');
   $btnCambioColor.addEventListener('click', cambioVariableColor)
+
+  document.querySelector('.abrir-paleta').addEventListener('click', function(){
+    if(!hasColorInputSupport(document)){
+      M.toast({html: 'Su navegador no soporta la paleta de colores', classes: 'red white-text'});
+    }
+  })
 
 
   const carouselInstance = M.Carousel.getInstance(document.querySelector('.carousel-slider.pg-principal'));
