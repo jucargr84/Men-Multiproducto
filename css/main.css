@@ -255,8 +255,6 @@ input[type="checkbox"]#toggle-saldos-container:checked + .fixed-mobile-layer#sal
    animation-duration: .2s;
    animation-timing-function: ease-in-out;
    animation-fill-mode: forwards;
-   transform: scale(0);
-   opacity: 1;
 }
 
 input[type="checkbox"]#toggle-saldos-container:checked + .fixed-mobile-layer#saldos #saldos-left .saldo_card:nth-of-type(1){
@@ -310,6 +308,10 @@ input[type="checkbox"]#toggle-saldos-container:checked + .fixed-mobile-layer#sal
    }
    .info-usuario .info-usuario_codigo p{
       line-height: unset;
+   }
+   #saldos .saldo_card{
+      transform: scale(0);
+      opacity: 0;
    }
 }
 /* UP TO Large */
